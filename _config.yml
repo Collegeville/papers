@@ -1,0 +1,35 @@
+# Site settings. To make this site your own, change everything in this block.
+title: "Papers Starter"
+heading: "Papers and Videos"
+intro: "Each paper is archived on Zenodo with a permanent DOI. Each has a short pitch video on YouTube and a quiz you can take to check what you took away."
+description: "A starter site for a collection of papers with companion pitch videos and quizzes. Copy it to make your own."
+home_label: "Collegeville"
+home_url: "https://collegeville.github.io/"
+copyright: "2026 Michael A. Heroux"
+# The note at the top of the page. Delete this line in your own copy.
+starter_note: 'This is a starter site with one example paper. To make a site like it for your own papers, <a href="https://github.com/Collegeville/papers">copy the Collegeville/papers repo</a> and follow its README.'
+
+# Where the site is served. For a repo named `papers` under account `NAME`,
+# use url "https://NAME.github.io" and baseurl "/papers".
+url: "https://collegeville.github.io"
+baseurl: "/papers"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - LICENSE-CONTENT
+  - skills
+  - vendor
